@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #008cba;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f5f;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.number {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ffcccb;
+    color: #333;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.number.sorted {
+    background-color: #90ee90;
+}
+
+.number.swapping {
+    transform: scale(1.2);
+    background-color: #ffa07a;
+}
+
+#log {
+    color: #333;
+    font-size: 14px;
+}
